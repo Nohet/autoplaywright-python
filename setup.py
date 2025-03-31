@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="autoplaywright-python",
-    version="1.0.0",
+    version="1.0.3",
     description="Automating Playwright steps using ChatGPT(OpenAI) or DeepSeek in Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -23,6 +23,7 @@ setup(
         "Programming Language :: Python :: 3",
     ],
     keywords="playwright automation, autoplaywright, playwright ai, playwright with ai, ChatGPT playwright",
+    include_package_data=True,
     packages=find_packages(),
     install_requires=["pydantic", "openai", "bs4"],
 )
